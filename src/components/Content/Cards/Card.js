@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/Cards.css";
+import "./Cards.css";
 import Icon from "@material-ui/core/Icon";
-import WeatherIcon from "./WeatherIcons";
+import WeatherIcon from "../../Icons/WeatherIcons";
 import ButtonDelete from "./ButtonDelete";
 
 function showDetailedWeather(setModal, foundCard, city) {

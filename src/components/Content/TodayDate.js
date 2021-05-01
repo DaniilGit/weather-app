@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Content.css";
+import "./Content.css";
 
 function getMonths() {
   let date = new Date().getMonth();

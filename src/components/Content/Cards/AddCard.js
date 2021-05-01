@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Cards.css";
+import "./Cards.css";
 
 function AddCard(props) {
   return (
@@ -17,7 +17,7 @@ function AddCard(props) {
           >
             <feOffset dy="3"></feOffset>
             <feGaussianBlur result="blur" stdDeviation="3"></feGaussianBlur>
-            <feFlood flood-color="#333" flood-opacity=".1"></feFlood>
+            <feFlood floodColor="#333" floodOpacity=".1"></feFlood>
             <feComposite in2="blur" operator="in"></feComposite>
             <feComposite in="SourceGraphic"></feComposite>
           </filter>

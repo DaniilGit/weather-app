@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/Search.css"
-import Card from "./Card";
-import Loader from "./Loader";
+import "./Search.css"
 import Icon from "@material-ui/core/Icon";
-import getWeather from "./function/getWeather";
-import Context from "./Context";
-import ModalWindow from "./ModalWindow";
+import Loader from "./Loader";
+import Card from "../Cards/Card";
+import getWeather from "../../App/getWeather";
+import Context from "../../App/Context";
+import ModalWindow from "../DetailedInfo/ModalWindow";
 
 function Search(props) {
   const [city, setCity] = React.useState();

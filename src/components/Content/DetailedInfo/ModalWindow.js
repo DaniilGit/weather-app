@@ -1,7 +1,7 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcons";
-import "../styles/Modal.css";
-import "../../node_modules/animate.css/animate.css";
+import WeatherIcon from "../../Icons/WeatherIcons";
+import "./Modal.css";
+import "../../../../node_modules/animate.css/animate.css";
 
 function NextDay(props) {
   let day = props.day;

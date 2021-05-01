@@ -1,21 +1,14 @@
 .container-main .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px 20px;
   height: 50px;
 }
 
 .container-main .header__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 220px;
 }
@@ -63,7 +56,6 @@
   bottom: 0;
   border-radius: 50px;
   background: #66a6ff;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -76,7 +68,6 @@
   height: 24px;
   border-radius: 50%;
   background: #ffde17;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -90,8 +81,7 @@
 
 .container-main .header .block-button .switch input:checked + .slider::before {
   background: #fff;
-  -webkit-transform: translateX(29px);
-          transform: translateX(29px);
+  transform: translateX(29px);
 }
 
 @media (max-width: 575px) {
@@ -107,7 +97,6 @@
 }
 
 .lightTheme {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5ee7df), to(#66a6ff));
   background-image: linear-gradient(to top, #5ee7df 0, #66a6ff 100%);
 }
 
@@ -116,7 +105,6 @@
 }
 
 .darkTheme {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#711b86), to(#00057a));
   background-image: linear-gradient(to bottom, #711b86, #00057a);
 }
 
@@ -141,12 +129,10 @@
 }
 
 .darkTheme .container-modal {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fc7db8), to(#495cfc));
   background-image: linear-gradient(#fc7db8, #495cfc);
 }
 
 .darkTheme .container-modal .block-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#711b86), to(#00347a));
   background-image: linear-gradient(to bottom, #711b86, #00347a);
 }
 
@@ -168,7 +154,6 @@
 }
 
 .darkTheme .block-search .block-right .modal-search .block-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#711b86), to(#00347a));
   background-image: linear-gradient(to bottom, #711b86, #00347a);
 }
 

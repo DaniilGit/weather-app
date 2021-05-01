@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/Cards.css";
+import "./Cards.css";
 import Icon from "@material-ui/core/Icon";
-import Context from "./Context";
+import Context from "../../App/Context";
 
 function deleteCity(city, data, setData, setDeleteCheck) {
   data.savedCities.forEach((item, index, array) => {

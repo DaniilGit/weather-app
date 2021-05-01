@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
-import getWeather from "./function/getWeather";
-import Content from "./Content";
+import getWeather from "./getWeather.js";
+import Content from "../Content/Content";
 import Context from "./Context";
 
 function App(props) {
@@ -18,7 +18,6 @@ function App(props) {
   }
 
   useEffect(() => {
-    console.log(JSON.parse (localStorage.getItem ("data")))
     if (JSON.parse (localStorage.getItem ("data")))
       setData(JSON.parse(localStorage.getItem ("data")));
     else

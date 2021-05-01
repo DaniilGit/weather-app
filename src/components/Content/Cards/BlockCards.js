@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Cards.css";
+import "./Cards.css";
 import Card from "./Card";
 import AddCard from "./AddCard";
-import "../../node_modules/animate.css/animate.css";
+import "../../../../node_modules/animate.css/animate.css";
 
 function BlockCards(props) {
   let cities = props.cities;

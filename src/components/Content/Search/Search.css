@@ -1,11 +1,7 @@
 .container-search {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .block-search {
@@ -15,15 +11,12 @@
   padding: 25px 50px;
   background-color: #ffffff;
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
 
 .block-search .block-left {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   text-align: center;
 }
 
@@ -54,22 +47,15 @@
 }
 
 .block-search .block-left__button-add:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .block-search .block-left .form-search {
   position: relative;
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .block-search .block-left .form-search__input {
@@ -81,20 +67,7 @@
   font-size: 18px;
   color: #0c1066;
   padding-left: 20px;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(12, 16, 102, 0.2);
-          box-shadow: 0px 5px 10px 2px rgba(12, 16, 102, 0.2);
-}
-
-.block-search .block-left .form-search__input::-webkit-input-placeholder {
-  color: #0c1066;
-}
-
-.block-search .block-left .form-search__input:-ms-input-placeholder {
-  color: #0c1066;
-}
-
-.block-search .block-left .form-search__input::-ms-input-placeholder {
-  color: #0c1066;
+  box-shadow: 0px 5px 10px 2px rgba(12, 16, 102, 0.2);
 }
 
 .block-search .block-left .form-search__input::placeholder {
@@ -121,27 +94,18 @@
 
 .block-search .block-left .main-content {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .block-search .block-left .main-content .found-card {
   cursor: default;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(12, 16, 102, 0.2);
-          box-shadow: 0px 5px 10px 2px rgba(12, 16, 102, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(12, 16, 102, 0.2);
 }
 
 .block-search .block-left .main-content .found-card:hover {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 .block-search .block-left .main-content .block-unknown-city {
@@ -158,14 +122,9 @@
 }
 
 .block-search .block-right {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-basis: 100%;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .block-search .button-close {
@@ -187,8 +146,7 @@
     width: 99%;
     padding: 0;
     margin-bottom: 25px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .block-search .block-left {
     margin-top: 20px;
@@ -204,8 +162,6 @@
     margin-bottom: 10px;
   }
   .block-search .block-left .main-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
   }
@@ -229,8 +185,7 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
   .block-search {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-bottom: 25px;
   }
   .block-search .block-left__header {
@@ -257,8 +212,7 @@
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .block-search {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-bottom: 25px;
   }
   .block-search .block-right {
@@ -278,8 +232,7 @@
 }
 
 .lds-ring div {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   position: absolute;
   width: 90px;
@@ -287,45 +240,28 @@
   margin: 8px;
   border: 8px solid #0c1066;
   border-radius: 50%;
-  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #0c1066 transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
-  -webkit-animation-delay: -0.45s;
-          animation-delay: -0.45s;
+  animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2) {
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+  animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3) {
-  -webkit-animation-delay: -0.15s;
-          animation-delay: -0.15s;
-}
-
-@-webkit-keyframes lds-ring {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation-delay: -0.15s;
 }
 
 @keyframes lds-ring {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=Search.css.map */

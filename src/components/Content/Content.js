@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/Content.css";
-import WeatherIcon from "./WeatherIcons";
-import BlockCards from "./BlockCards";
-import DetailedInfo from "./DetailedInfo";
+import "./Content.css";
+import WeatherIcon from "../Icons/WeatherIcons";
+import BlockCards from "./Cards/BlockCards";
+import DetailedInfo from "./DetailedInfo/DetailedInfo";
 import TodayDate from "./TodayDate";
-import Search from "./Search";
+import Search from "./Search/Search";
 
 function changeTheme(e) {
   if (!e.target.checked) {
