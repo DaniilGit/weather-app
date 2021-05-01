@@ -14,7 +14,6 @@ function changeTheme(e) {
   }
 }
 
-
 function Content(props) {
   const [modal, setModal] = React.useState({
     isOpen: false,

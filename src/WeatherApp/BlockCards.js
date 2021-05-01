@@ -19,6 +19,7 @@ function BlockCards(props) {
             city={item}
             key={item.name}
             modal={props.modal}
+            close={true}
             setModal={props.setModal}
             nameClass={"card"}
             setDeleteCheck={setDeleteCheck}

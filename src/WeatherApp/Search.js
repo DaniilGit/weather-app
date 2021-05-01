@@ -46,12 +46,17 @@ function Search(props) {
                 ? ( 
                   isEmpty(data.newCity)
                     ? <>
-                        <Card city={data.newCity} key={data.newCity.name} foundCard={true} nameClass={"card found-card"}/>
+                        <Card 
+                          city={data.newCity} 
+                          key={data.newCity.name} 
+                          foundCard={true}
+                          close={false} 
+                          nameClass={"card found-card"}/>
                         <button 
                           className="block-left__button-add" 
                           onClick={() => {
                             let buffer = data.savedCities;
-                            buffer.push(data.newCity);
+                            buffer.push(data.newCity); buffer = data.savedCities;
                             setData({...data, savedCities: buffer});
                             localStorage.setItem("data", JSON.stringify(data));
                           }}>

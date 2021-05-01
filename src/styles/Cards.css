@@ -131,4 +131,10 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+@media (max-width: 575px) {
+  .card, .add-card {
+    margin: 50px 0;
+  }
+}
 /*# sourceMappingURL=Cards.css.map */

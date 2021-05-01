@@ -39,8 +39,8 @@
   .container-modal__button-back {
     width: 50px;
     height: 50px;
-    top: 30px;
-    left: 5px;
+    top: 40px;
+    left: 45px;
   }
 }
 
@@ -177,9 +177,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 40px;
   color: #39437a;
 }
 
@@ -210,11 +208,12 @@
 
 @media (max-width: 575px) {
   .modal-window {
-    width: 70%;
-    min-height: 900px;
+    width: 80%;
+    min-height: 800px;
     margin-top: 25px;
   }
   .modal-window .block-top {
+    height: 375px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -227,6 +226,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: normal;
   }
   .modal-window .block-top .block-top-left {
     margin: 10px;
@@ -238,13 +238,13 @@
     margin: 10px;
   }
   .modal-window .block-top .block-top-right__name-city {
-    font-size: 62px;
+    font-size: 42px;
   }
   .modal-window .block-top .block-top-right__name-city::after {
-    bottom: 30px;
+    bottom: 50px;
   }
   .modal-window .block-bottom {
-    min-height: 450px;
+    min-height: 500px;
   }
   .modal-window .block-bottom .next-days {
     -webkit-box-pack: center;
@@ -262,6 +262,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
+  .modal-window {
+    width: 75%;
+  }
   .modal-window .block-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -289,10 +292,10 @@
     font-size: 72px;
   }
   .modal-window .block-top .block-top-right__name-city::after {
-    bottom: 20px;
+    bottom: 10px;
   }
   .modal-window .block-bottom {
-    min-height: 325px;
+    height: 40%;
   }
   .modal-window .block-bottom .next-days {
     -webkit-box-pack: center;
@@ -317,7 +320,10 @@
     font-size: 84px;
   }
   .modal-window .block-top .block-top-right__name-city {
-    font-size: 72px;
+    font-size: 58px;
+  }
+  .modal-window .block-top .block-top-right__name-city::after {
+    bottom: 10px;
   }
   .modal-window .block-bottom .next-days {
     margin-top: 10px;
@@ -365,5 +371,14 @@
 
 .modal-search .block-bottom .next-days {
   width: 100%;
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .modal-search .block-top .block-top-right__name-city {
+    font-size: 36px;
+  }
+  .modal-search .block-top .block-top-right__name-city::after {
+    bottom: 20px;
+  }
 }
 /*# sourceMappingURL=Modal.css.map */

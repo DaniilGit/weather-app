@@ -18,7 +18,8 @@ function Card(props) {
         className={props.nameClass}
         onClick={() => showDetailedWeather(props.setModal, props.foundCard, city)}
       >
-        <div className="card__name-city">{city.name}</div>
+        <div className="card__name-city">
+          {city.name}</div>
         <WeatherIcon
           weather={city.currentDay.weather}
           nameClass={"card__icon-weather"}
@@ -38,7 +39,9 @@ function Card(props) {
           </div>
         </div>
       </div>
-      <ButtonDelete city={city} setDeleteCheck={props.setDeleteCheck}/>
+      {
+        props.close && <ButtonDelete city={city} setDeleteCheck={props.setDeleteCheck}/>
+      }
     </div>
   );
 }
