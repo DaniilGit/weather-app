@@ -59,6 +59,8 @@ function Search(props) {
                             buffer.push(data.newCity); buffer = data.savedCities;
                             setData({...data, savedCities: buffer});
                             localStorage.setItem("data", JSON.stringify(data));
+                            props.setSearch(false);
+                            setData({...data, newCity: ""});
                           }}>
                             Добавить город
                           </button>
