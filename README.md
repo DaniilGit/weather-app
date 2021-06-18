@@ -1,22 +1,29 @@
-# Веб-приложение "Прогноз погоды"
-Приложение создано в рамках производственной практики СибГУТИ.
+# Weather App
+The application was created as part of SibSUTIS production practice.
 
-### Приложение - SPA, написано на React. Использовалась адаптивная верстка
-В качестве API использовалась OpenWeatherMap API (<https://openweathermap.org/api>)
+### React SPA. Adaptive design.
+Used OpenWeatherMap API (<https://openweathermap.org/api>)
 ***
-#### Главная "страница":
-![Главная страница](https://i.ibb.co/dffhkfH/Main.png)
+#### Main page:
+![Main page](https://i.ibb.co/dffhkfH/Main.png)
 ***
-#### Подробная информация о погоде города:
-![Подробная информация](https://i.ibb.co/8jscPVz/Detailed.png)
+#### Detailed information about the city's weather:
+![Detailed info](https://i.ibb.co/8jscPVz/Detailed.png)
 ***
-#### Поиск города:
-![Поиск](https://i.ibb.co/5W7NdW9/Search.png)
+#### Search city:
+![Search](https://i.ibb.co/5W7NdW9/Search.png)
 ***
-## Установка и сборка
+## Available Scripts
 
-Для установки необходимо склонировать репозиторий, с помощью команды ```npm install``` скачать доп. модули для приложения.
+In the project directory, you can instal modules:
 
-Чтобы запустить приложение локально ```npm start```.
+#### ```npm install```
 
-Сборка приложения ```npm run build```, после чего разместить готовую сборку на веб-сервере.
+Run project:
+
+#### ```npm start```.
+
+
+Build project:
+
+#### ```npm run build```
