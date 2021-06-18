@@ -3,6 +3,14 @@ The application was created as part of SibSUTIS production practice.
 
 ### React SPA. Adaptive design.
 Used OpenWeatherMap API (<https://openweathermap.org/api>)
+
+## Features
+* Search cities
+* Add new city
+* Detailed weather for 5 days ahead
+* Save in localstorage added cities
+* Light and dark themes
+
 ***
 #### Main page:
 ![Main page](https://i.ibb.co/dffhkfH/Main.png)
