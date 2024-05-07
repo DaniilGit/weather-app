@@ -1,21 +1,25 @@
 import { getCityWeather } from '@/shared/api';
-import { CityWeather } from '@/shared/types';
+import { CityWeather, City } from '@/shared/types';
 import { CitiesGrid } from '@/widgets/cities-grid';
 import { Typography } from '@mui/material';
 import { useQueries } from '@tanstack/react-query';
 
 export const MainPage = () => {
   const popularCities = ['Paris', 'London', 'New York', 'Moscow', 'Berlin', 'Tokyo'];
-  const { data: cities, isPending }: { data: (CityWeather | undefined)[]; isPending: boolean } = useQueries({
+  const { cities, isPending } = useQueries({
     queries: popularCities.map((city) => ({
-      queryKey: ['cityWeather', city],
+      queryKey: ['weather', city],
       queryFn: () => getCityWeather(city),
       refetchOnWindowFocus: false,
       retry: false,
     })),
-    combine: (results) => {
+    combine: (results): { cities: City[]; isPending: boolean } => {
       return {
-        data: results.map((result) => result.data?.data),
+        cities: results.map((result) => {
+          return {
+            weather: result.data?.data as CityWeather | undefined,
+          };
+        }),
         isPending: results.some((result) => result.isPending),
       };
     },

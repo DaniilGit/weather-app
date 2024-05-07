@@ -1,13 +1,14 @@
+import { useId } from 'react';
 import { CityCard } from '@/entities/city';
-import { CityWeather } from '@/shared/types';
+import { City } from '@/shared/types';
 import { Grid } from '@mui/material';
 
-export const CitiesGrid = ({ cities, isPending }: { cities: (CityWeather | undefined)[]; isPending: boolean }) => {
+export const CitiesGrid = ({ cities, isPending }: { cities: City[]; isPending: boolean }) => {
   return (
     <Grid container spacing={2}>
       {cities.map((city) =>
         city || isPending ? (
-          <Grid key={city?.id} item xs={12} sm={6} md={4}>
+          <Grid key={useId()} item xs={12} sm={6} md={4}>
             <CityCard city={city} />
           </Grid>
         ) : null,

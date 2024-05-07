@@ -1,15 +1,15 @@
-import { CityWeather } from '@/shared/types';
+import { City } from '@/shared/types';
 import { Box, Card, Chip, Skeleton, Typography, Divider, IconButton } from '@mui/material';
 import { Air, Thermostat, ArrowForward } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
-export const CityCard = ({ city }: { city: CityWeather | undefined }) => {
+export const CityCard = ({ city }: { city: City }) => {
   return (
     <Card variant="outlined">
       <Box sx={{ p: 1.5 }}>
-        {city ? (
+        {city.weather ? (
           <Typography variant="h5" component="div">
-            {city.name}, {city.sys.country}
+            {city.weather.name}, {city.weather.sys.country}
           </Typography>
         ) : (
           <Skeleton variant="rounded" width={100} height={32} />
@@ -17,24 +17,24 @@ export const CityCard = ({ city }: { city: CityWeather | undefined }) => {
       </Box>
       <Divider />
       <Box sx={{ px: 1.5, pt: 1 }}>
-        {city ? (
+        {city.weather ? (
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-            <img src={`https://openweathermap.org/img/wn/${city.weather[0].icon}.png`} />
-            <Typography variant="h6">{city.main.temp} °C</Typography>
+            <img src={`https://openweathermap.org/img/wn/${city.weather.weather[0].icon}.png`} />
+            <Typography variant="h6">{city.weather.main.temp} °C</Typography>
           </Box>
         ) : (
           <Skeleton variant="rounded" width={140} height={50} />
         )}
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 1, px: 1.5, py: 1 }}>
-        {city ? (
+        {city.weather ? (
           <>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }} flexWrap={'wrap'}>
-              <Chip label={`min: ${city.main.temp_min} °C`} size="small" icon={<Thermostat />} />
-              <Chip label={`max: ${city.main.temp_max} °C`} size="small" icon={<Thermostat />} />
-              <Chip label={`${city.wind.speed} m/s`} size="small" icon={<Air />} />
+              <Chip label={`min: ${city.weather.main.temp_min} °C`} size="small" icon={<Thermostat />} />
+              <Chip label={`max: ${city.weather.main.temp_max} °C`} size="small" icon={<Thermostat />} />
+              <Chip label={`${city.weather.wind.speed} m/s`} size="small" icon={<Air />} />
             </Box>
-            <Link to={`/city/${city.name.toLowerCase()}`} state={{ cityWeather: city }}>
+            <Link to={`/city/${city.weather.name.toLowerCase()}`}>
               <IconButton>
                 <ArrowForward />
               </IconButton>
