@@ -1,4 +1,4 @@
-import { useId } from 'react';
+import { useEffect, useId } from 'react';
 import { CityCard } from '@/entities/city';
 import { City } from '@/shared/types';
 import { Grid } from '@mui/material';

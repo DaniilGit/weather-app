@@ -1,8 +1,10 @@
+import { CitySearch } from '@/features/search';
 import { getCityWeather } from '@/shared/api';
 import { CityWeather, City } from '@/shared/types';
 import { CitiesGrid } from '@/widgets/cities-grid';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useQueries } from '@tanstack/react-query';
+import { useEffect } from 'react';
 
 export const MainPage = () => {
   const popularCities = ['Paris', 'London', 'New York', 'Moscow', 'Berlin', 'Tokyo'];
@@ -25,8 +27,18 @@ export const MainPage = () => {
     },
   });
 
+  useEffect(() => {
+    console.log(1);
+  });
+
   return (
     <>
+      <Box sx={{ mb: 6 }}>
+        <Typography variant="h4" sx={{ mb: 2 }}>
+          Search city
+        </Typography>
+        <CitySearch />
+      </Box>
       <Typography variant="h4" sx={{ mb: 2 }}>
         Popular cities
       </Typography>

@@ -44,32 +44,35 @@ export type CityForecast = {
     sunrise: number;
     sunset: number;
   };
-  list: {
-    dt: number;
-    main: {
-      temp: number;
-      feels_like: number;
-      temp_min: number;
-      temp_max: number;
-      pressure: number;
-      sea_level: number;
-      grnd_level: number;
-      humidity: number;
-      temp_kf: number;
-    };
-    weather: Weather[];
-    clouds: {
-      all: number;
-    };
-    pop: number;
-    sys: {
-      pod: string;
-    };
-    wind: {
-      speed: number;
-      deg: number;
-      gust: number;
-    };
+  list: ForecastItem[];
+};
+
+export type ForecastItem = {
+  dt: number;
+  main: {
+    temp: number;
+    feels_like: number;
+    temp_min: number;
+    temp_max: number;
+    pressure: number;
+    sea_level: number;
+    grnd_level: number;
+    humidity: number;
+    temp_kf: number;
+  };
+  weather: Weather[];
+  clouds: {
+    all: number;
+  };
+  pop: number;
+  sys: {
+    pod: string;
+  };
+  visibility: number;
+  wind: {
+    speed: number;
+    deg: number;
+    gust: number;
   };
 };
 
